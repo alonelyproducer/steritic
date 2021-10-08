@@ -58,6 +58,7 @@
       <PreprocessorDefinitions>STC_PLAT_WIN;STC_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Steritic\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -72,6 +73,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>STC_PLAT_WIN;STC_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Steritic\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -85,9 +87,11 @@
     <ClInclude Include="src\STC\Application.h" />
     <ClInclude Include="src\STC\Core.h" />
     <ClInclude Include="src\STC\EntryPoint.h" />
+    <ClInclude Include="src\STC\Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\STC\Application.cpp" />
+    <ClCompile Include="src\STC\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

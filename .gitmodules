@@ -1,0 +1,3 @@
+[submodule "Steritic/vendor/spdlog"]
+	path = Steritic/vendor/spdlog
+	url = https://github.com/gabime/spdlog
